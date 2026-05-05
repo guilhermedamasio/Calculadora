@@ -52,9 +52,10 @@
             this.botao17 = new System.Windows.Forms.Button();
             this.botao9 = new System.Windows.Forms.Button();
             this.botao5 = new System.Windows.Forms.Button();
-            this.numeroDigitado1 = new System.Windows.Forms.Label();
-            this.numeroSalvo = new System.Windows.Forms.Label();
             this.historicoCalculo = new System.Windows.Forms.Label();
+            this.numeroDigitado1 = new System.Windows.Forms.TextBox();
+            this.histNum1 = new System.Windows.Forms.TextBox();
+            this.historicoCalculos = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // botao8
@@ -93,6 +94,7 @@
             this.botao24.TabIndex = 10;
             this.botao24.Text = "=";
             this.botao24.UseVisualStyleBackColor = true;
+            this.botao24.Click += new System.EventHandler(this.botao24_Click);
             // 
             // botao4
             // 
@@ -130,6 +132,7 @@
             this.botao3.TabIndex = 17;
             this.botao3.Text = "C";
             this.botao3.UseVisualStyleBackColor = true;
+            this.botao3.Click += new System.EventHandler(this.botao3_Click);
             // 
             // botao23
             // 
@@ -202,6 +205,7 @@
             this.botao18.TabIndex = 21;
             this.botao18.Text = "2";
             this.botao18.UseVisualStyleBackColor = true;
+            this.botao18.Click += new System.EventHandler(this.botao18_Click);
             // 
             // botao10
             // 
@@ -256,6 +260,7 @@
             this.botao17.TabIndex = 27;
             this.botao17.Text = "1";
             this.botao17.UseVisualStyleBackColor = true;
+            this.botao17.Click += new System.EventHandler(this.botao17_Click);
             // 
             // botao9
             // 
@@ -276,24 +281,6 @@
             this.botao5.UseVisualStyleBackColor = true;
             this.botao5.Click += new System.EventHandler(this.button24_Click);
             // 
-            // numeroDigitado1
-            // 
-            this.numeroDigitado1.AutoSize = true;
-            this.numeroDigitado1.Location = new System.Drawing.Point(304, 107);
-            this.numeroDigitado1.Name = "numeroDigitado1";
-            this.numeroDigitado1.Size = new System.Drawing.Size(13, 13);
-            this.numeroDigitado1.TabIndex = 31;
-            this.numeroDigitado1.Text = "0";
-            // 
-            // numeroSalvo
-            // 
-            this.numeroSalvo.AutoSize = true;
-            this.numeroSalvo.Location = new System.Drawing.Point(304, 19);
-            this.numeroSalvo.Name = "numeroSalvo";
-            this.numeroSalvo.Size = new System.Drawing.Size(13, 13);
-            this.numeroSalvo.TabIndex = 32;
-            this.numeroSalvo.Text = "0";
-            // 
             // historicoCalculo
             // 
             this.historicoCalculo.AutoSize = true;
@@ -302,14 +289,40 @@
             this.historicoCalculo.Size = new System.Drawing.Size(0, 13);
             this.historicoCalculo.TabIndex = 33;
             // 
+            // numeroDigitado1
+            // 
+            this.numeroDigitado1.Location = new System.Drawing.Point(86, 69);
+            this.numeroDigitado1.Multiline = true;
+            this.numeroDigitado1.Name = "numeroDigitado1";
+            this.numeroDigitado1.Size = new System.Drawing.Size(237, 59);
+            this.numeroDigitado1.TabIndex = 34;
+            this.numeroDigitado1.TextChanged += new System.EventHandler(this.numeroDigitado1_TextChanged);
+            // 
+            // histNum1
+            // 
+            this.histNum1.Location = new System.Drawing.Point(167, 4);
+            this.histNum1.Multiline = true;
+            this.histNum1.Name = "histNum1";
+            this.histNum1.Size = new System.Drawing.Size(156, 59);
+            this.histNum1.TabIndex = 35;
+            // 
+            // historicoCalculos
+            // 
+            this.historicoCalculos.Location = new System.Drawing.Point(5, 4);
+            this.historicoCalculos.Multiline = true;
+            this.historicoCalculos.Name = "historicoCalculos";
+            this.historicoCalculos.Size = new System.Drawing.Size(75, 124);
+            this.historicoCalculos.TabIndex = 36;
+            // 
             // Valor2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 458);
-            this.Controls.Add(this.historicoCalculo);
-            this.Controls.Add(this.numeroSalvo);
+            this.Controls.Add(this.historicoCalculos);
+            this.Controls.Add(this.histNum1);
             this.Controls.Add(this.numeroDigitado1);
+            this.Controls.Add(this.historicoCalculo);
             this.Controls.Add(this.botao13);
             this.Controls.Add(this.botao1);
             this.Controls.Add(this.botao21);
@@ -367,9 +380,10 @@
         private System.Windows.Forms.Button botao17;
         private System.Windows.Forms.Button botao9;
         private System.Windows.Forms.Button botao5;
-        private System.Windows.Forms.Label numeroDigitado1;
-        private System.Windows.Forms.Label numeroSalvo;
         private System.Windows.Forms.Label historicoCalculo;
+        private System.Windows.Forms.TextBox numeroDigitado1;
+        private System.Windows.Forms.TextBox histNum1;
+        private System.Windows.Forms.TextBox historicoCalculos;
     }
 }
 

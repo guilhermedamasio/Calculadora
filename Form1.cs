@@ -41,7 +41,58 @@ namespace Calculadora
 
         private void botao20_Click(object sender, EventArgs e)
         {
+            histNum1.Text = numeroDigitado1.Text + " + ";
+            double primeiroNumero = Convert.ToDouble(numeroDigitado1.Text);
 
+
+            numeroDigitado1.Text = "";
+           
+
+        }
+
+        private void botao17_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "1";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "1";
+            }
+        }
+
+        private void numeroSalvo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numeroDigitado1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botao18_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "2";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "2";
+            }
+        }
+
+        private void botao24_Click(object sender, EventArgs e)
+        {
+            if (histNum1.Text != null && numeroDigitado1.Text != "")
+            {
+                double segundoNumero = Convert.ToDouble(numeroDigitado1.Text);
+                double resultado = Convert.ToDouble(histNum1.Text.Split(' ')[0]) + segundoNumero;
+                numeroDigitado1.Text = resultado.ToString();
+                histNum1.Text = "";
+            }
+        }
+
+        private void botao3_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = "";
+            histNum1.Text = "";
         }
     }
 }
