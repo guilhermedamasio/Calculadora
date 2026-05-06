@@ -21,21 +21,45 @@ namespace Calculadora
         {
 
         }
-        private void soma_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
-
+            atualCalculo += (sender as Button).Text;
+            txt.Text = atualCalculo;
         }
+        private void button_Equals_click(object sender, EventArgs e)
+        {
+            string formatodeCalculo = atualCalculo.ToString();
+            try
+            {
+                var resultado = new DataTable().Compute(formatodeCalculo, null).ToString();
+                formatodeCalculo = txt.Text;
+            }
+            catch (Exception)
+            {
+                txt.Text = "ERROR";
+                atualCalculo = "";
+            }
+        }
+        private void button_Clear_Click(object sender, EventArgs e)
+        {
+            atualCalculo = "";
+            txt.Text = "0";
+        }
+        private void button_clearEnter_Click(object sender, EventArgs e)
+        {
+            if (atualCalculo.Length > 0)
+            {
+                atualCalculo = atualCalculo.Remove(atualCalculo.Length - 1, 1);
 
+            }
+            txt.Text = atualCalculo;
+        }
         private void button24_Click(object sender, EventArgs e)
         {
 
