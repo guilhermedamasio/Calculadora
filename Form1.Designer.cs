@@ -123,6 +123,7 @@
             this.botao15.TabIndex = 18;
             this.botao15.Text = "6";
             this.botao15.UseVisualStyleBackColor = true;
+            this.botao15.Click += new System.EventHandler(this.botao15_Click);
             // 
             // botao3
             // 
@@ -151,6 +152,7 @@
             this.botao19.TabIndex = 15;
             this.botao19.Text = "3";
             this.botao19.UseVisualStyleBackColor = true;
+            this.botao19.Click += new System.EventHandler(this.botao19_Click);
             // 
             // botao11
             // 
@@ -160,6 +162,7 @@
             this.botao11.TabIndex = 14;
             this.botao11.Text = "9";
             this.botao11.UseVisualStyleBackColor = true;
+            this.botao11.Click += new System.EventHandler(this.botao11_Click);
             // 
             // botao7
             // 
@@ -178,6 +181,7 @@
             this.botao14.TabIndex = 24;
             this.botao14.Text = "5";
             this.botao14.UseVisualStyleBackColor = true;
+            this.botao14.Click += new System.EventHandler(this.botao14_Click);
             // 
             // botao2
             // 
@@ -196,6 +200,7 @@
             this.botao22.TabIndex = 22;
             this.botao22.Text = "0";
             this.botao22.UseVisualStyleBackColor = true;
+            this.botao22.Click += new System.EventHandler(this.botao22_Click);
             // 
             // botao18
             // 
@@ -215,6 +220,7 @@
             this.botao10.TabIndex = 20;
             this.botao10.Text = "8";
             this.botao10.UseVisualStyleBackColor = true;
+            this.botao10.Click += new System.EventHandler(this.botao10_Click);
             // 
             // botao6
             // 
@@ -233,6 +239,7 @@
             this.botao13.TabIndex = 30;
             this.botao13.Text = "4";
             this.botao13.UseVisualStyleBackColor = true;
+            this.botao13.Click += new System.EventHandler(this.botao13_Click);
             // 
             // botao1
             // 
@@ -270,6 +277,7 @@
             this.botao9.TabIndex = 26;
             this.botao9.Text = "7";
             this.botao9.UseVisualStyleBackColor = true;
+            this.botao9.Click += new System.EventHandler(this.botao9_Click);
             // 
             // botao5
             // 

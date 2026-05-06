@@ -94,5 +94,77 @@ namespace Calculadora
             numeroDigitado1.Text = "";
             histNum1.Text = "";
         }
+
+        private void botao19_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "3";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "3";
+            }
+        }
+
+        private void botao13_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "4";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "4";
+            }
+        }
+
+        private void botao14_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "5";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "5";
+            }
+        }
+
+        private void botao15_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "6";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "6";
+            }
+        }
+
+        private void botao9_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "7";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "7";
+            }
+        }
+
+        private void botao10_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "8";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "8";
+            }
+        }
+
+        private void botao11_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "9";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "9";
+            }
+        }
+
+        private void botao22_Click(object sender, EventArgs e)
+        {
+            numeroDigitado1.Text = numeroDigitado1.Text + "0";
+            if (numeroDigitado1.Text == "" && histNum1.Text != null)
+            {
+                numeroDigitado1.Text = numeroDigitado1.Text + "0";
+            }
+        }
     }
 }
